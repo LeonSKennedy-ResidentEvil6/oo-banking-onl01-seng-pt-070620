@@ -6,10 +6,10 @@ class Transfer
     @receiver = receiver
     @amount = amount
     @status = "pending"
-    valid?(sender, receiver, amount)
+    self.valid?
   end
 
-  def valid?(sender,receiver,amount)
+  def valid?
     if self.sender != "" && self.receiver != "" && self.amount > 0
       true 
     else 
