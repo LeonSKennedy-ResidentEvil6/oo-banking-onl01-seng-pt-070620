@@ -23,7 +23,7 @@ class Transfer
     if self.status != "complete"
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
-      self.status = "complete"
+      #self.status = "complete"
     end
 
     if not (sender.valid? && receiver.valid?)
