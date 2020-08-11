@@ -27,7 +27,7 @@ class Transfer
 
     end
 
-    if !sender.valid? && !receiver.valid?
+    if not (sender.valid? && receiver.valid?)
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
