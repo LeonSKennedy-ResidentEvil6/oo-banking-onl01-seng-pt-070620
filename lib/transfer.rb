@@ -23,13 +23,15 @@ class Transfer
     if self.status != "complete"
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
-      #self.status = "complete"
+      self.status = "complete"
     end
 
     if not (sender.valid? && receiver.valid?)
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
+
+    
     # if sender.valid? && receiver.valid?
     #  sender.balance = sender.balance - amount
     #   receiver.balance = receiver.balance + amount
