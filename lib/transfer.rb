@@ -31,7 +31,6 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     end
 
-
     # if sender.valid? && receiver.valid?
     #  sender.balance = sender.balance - amount
     #   receiver.balance = receiver.balance + amount
